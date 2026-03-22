@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Cafe Sign Up</title>
+
+<style>
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: #f0f4f8;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.signup-box {
+  background: white;
+  padding: 40px;
+  width: 340px;
+  border-radius: 10px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.signup-box h2 {
+  color: #007bff;
+  margin-bottom: 20px;
+}
+
+.input-box {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.input-box label {
+  font-size: 14px;
+}
+
+.input-box input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background: #007bff;
+  border: none;
+  color: white;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+.extra {
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.extra a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+/* Responsive */
+@media (max-width: 400px) {
+  .signup-box {
+    width: 90%;
+    padding: 20px;
+  }
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+  <div class="signup-box">
+    <h2>Create Account</h2>
+
+    <form action="signup.php" method="POST">
+      <div class="input-box">
+        <label>Full Name</label>
+        <input type="text" name="name" placeholder="Enter your name" required>
+      </div>
+
+      <div class="input-box">
+        <label>Email</label>
+        <input type="email" name="email" placeholder="Enter your email" required>
+      </div>
+
+      <div class="input-box">
+        <label>Password</label>
+        <input type="password" name="password" placeholder="Create password" required>
+      </div>
+
+      <div class="input-box">
+        <label>Confirm Password</label>
+        <input type="password" name="confirm_password" placeholder="Confirm password" required>
+      </div>
+
+      <button type="submit">Sign Up</button>
+    </form>
+
+    <div class="extra">
+      <p>Already have an account? <a href="login.html">Login</a></p>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
